@@ -1,0 +1,41 @@
+<form [formGroup]="applyForm" (submit)="submitApplication()">
+  <label>Número de columnas</label>
+  <select formControlName="columnas">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+  </select>
+  <input type="color" formControlName="color" />
+  <button type="submit" class="btn btn-primary">Agregar</button>
+</form>
+@for (item of bloques; track item.id) {
+<div class="row">
+  @for (subitem of item.divs; track subitem.id) {
+  <div
+    [class]="'col-' + subitem.columnas"
+    [style.background-color]="subitem.colorFondo"
+  >
+    prueba {{ 'col-' + subitem.columnas }}
+  </div>
+  }
+</div>
+}
+<hr />
+<div class="row">
+  <div
+    [innerHtml]="item.valor | safeHtml"
+    [style.background-color]="item.fondo"
+    [class]="'col-' + item.columnas"
+    (click)="seleccionarItem(item)"
+    *ngFor="let item of bloques2"
+  ></div>
+</div>
