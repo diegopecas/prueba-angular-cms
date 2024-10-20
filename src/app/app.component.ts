@@ -6,8 +6,6 @@ import { PipesModule } from './common/pipes/pipes.module';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, PipesModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
