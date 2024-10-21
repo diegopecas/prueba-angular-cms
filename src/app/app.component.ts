@@ -7,11 +7,12 @@ import { RouterOutlet } from '@angular/router';
 import { EncabezadoComponent } from "./transversales/encabezado/encabezado.component";
 import { PieComponent } from './transversales/pie/pie.component';
 import { CabeceraComponent } from './transversales/cabecera/cabecera.component';
+import { CarruselComponent } from './transversales/carrusel/carrusel.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, EncabezadoComponent, PieComponent, CabeceraComponent],
+  imports: [CommonModule, RouterOutlet, EncabezadoComponent, PieComponent, CabeceraComponent, CarruselComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

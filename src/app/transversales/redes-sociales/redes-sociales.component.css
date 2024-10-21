@@ -1,0 +1,65 @@
+.redes {
+    background-color: #f2f2f2;
+}
+    
+.redes > h2 {
+    color: #73b7ad;
+    font-size: 1.2rem;
+}
+
+.redes > iframe {
+    width: 100% !important;
+}
+/*.redes {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+
+.instagram {
+    width: calc((100% - 120px)/3);
+    max-width: 33%;
+}
+
+.instagram > iframe {
+    width: 100%;
+    max-width: 100%;
+}
+
+.instagram-media {
+  background: #fff;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+  margin: 1px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 0;
+  width: 99.375%;
+  width: -webkit-calc(100% - 2px);
+  width: calc(100% - 2px);
+}
+
+.youtube {
+    width: calc((100% - 120px)/3);
+    max-width: 33%;
+}
+
+.youtube > iframe {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.twitter {
+    width: calc((100% - 120px)/3);
+    max-width: 33%;
+}
+
+.twitter > .twitter-tweet {
+    width: 100%;
+    max-width: 100%;
+    display: block !important;
+}
+*/

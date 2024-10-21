@@ -1,0 +1,46 @@
+.eventos > h2 {
+    color: #73b7ad;
+    font-size: 1.2rem;
+}
+
+.event-card {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.date-section {
+  text-align: center;
+  margin-right: 15px;
+}
+
+.date-section .month {
+  display: block;
+  font-size: 14px;
+  color: #e66b7d; /* Color rosado para el mes */
+  font-weight: bold;
+}
+
+.date-section .day {
+  display: block;
+  font-size: 32px;
+  color: #e66b7d; /* Color rosado para el día */
+  font-weight: bold;
+}
+
+.details-section h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.details-section p {
+  font-size: 14px;
+  color: #666;
+}

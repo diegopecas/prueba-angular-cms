@@ -1,1 +1,90 @@
-<p>noticias works!</p>
+<div class="row">
+  <div class="col-md-12 mt-3 mb-3 p-3 noticias">
+    <h2>Noticias</h2>
+    <div class="content-card-principal">
+      <div class="image-section-principal">
+        <img
+          src="assets/images/noticia.png"
+          alt="Imagen de Salud"
+        />
+      </div>
+      <div class="text-section-principal">
+        <h3>
+          <span class="govco-angle-right rosa"></span>{{ noticias[0].titulo
+          }}<br />
+          <sub class="gris">{{ noticias[0].fecha }}</sub>
+        </h3>
+        <p>
+          {{ noticias[0].descripcion }}
+        </p>
+        <a href="#">Ver más</a>
+      </div>
+    </div>
+    @for (noticia of noticias; track noticia.id) {
+    <div class="content-card">
+      <div class="image-section">
+        <img
+          src="assets/images/mini-noticia.png"
+          alt="Imagen de Salud"
+        />
+      </div>
+      <div class="text-section">
+        <h3>
+          <span class="govco-angle-right rosa"></span>{{ noticia.titulo }}<br />
+          <sub class="gris">{{ noticia.fecha }}</sub>
+        </h3>
+        <p>
+          {{ noticia.descripcion }}
+        </p>
+        <a href="#">Ver más</a>
+      </div>
+    </div>
+    }
+    <!--<div class="content-card">
+      <div class="image-section">
+        <img
+        src="assets/images/mini-noticia.png"
+        width="200"
+        height="100"
+          alt="Imagen de Salud"
+        />
+      </div>
+      <div class="text-section">
+        <h3>
+          Inicia el proceso de revisión de procedimientos excluidos del
+          financiamiento con recursos públicos de salud
+        </h3>
+        <p>
+          El Ministerio de Salud y Protección Social informa a todos los actores
+          del Sistema General de Seguridad Social en Salud que, conforme a lo
+          establecido en el artículo 15 de la Ley 1751 de 2015 y el artículo 32
+          de la Resolución 318 de 2023, desde el 15 de octubre...
+        </p>
+        <a href="#">Ver más</a>
+      </div>
+    </div>
+    <div class="content-card">
+      <div class="image-section">
+        <img
+        src="assets/images/mini-noticia.png"
+        width="200"
+        height="100"
+          alt="Imagen de Salud"
+        />
+      </div>
+      <div class="text-section">
+        <h3>
+          Inicia el proceso de revisión de procedimientos excluidos del
+          financiamiento con recursos públicos de salud
+        </h3>
+        <p>
+          El Ministerio de Salud y Protección Social informa a todos los actores
+          del Sistema General de Seguridad Social en Salud que, conforme a lo
+          establecido en el artículo 15 de la Ley 1751 de 2015 y el artículo 32
+          de la Resolución 318 de 2023, desde el 15 de octubre...
+        </p>
+        <a href="#">Ver más</a>
+      </div>
+    </div>-->
+  </div>
+</div>
