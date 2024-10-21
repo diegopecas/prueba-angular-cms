@@ -4,10 +4,10 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { PipesModule } from './common/pipes/pipes.module';
 import { RouterOutlet } from '@angular/router';
-import { EncabezadoComponent } from "./transversales/encabezado/encabezado.component";
-import { PieComponent } from './transversales/pie/pie.component';
-import { CabeceraComponent } from './transversales/cabecera/cabecera.component';
-import { CarruselComponent } from './transversales/carrusel/carrusel.component';
+import { EncabezadoComponent } from "./components/transversales/encabezado/encabezado.component";
+import { PieComponent } from './components/transversales/pie/pie.component';
+import { CabeceraComponent } from './components/transversales/cabecera/cabecera.component';
+import { CarruselComponent } from './components/transversales/carrusel/carrusel.component';
 
 @Component({
   selector: 'app-root',

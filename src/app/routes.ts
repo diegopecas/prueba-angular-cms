@@ -1,8 +1,8 @@
 import { provideRouter, Routes, withComponentInputBinding } from '@angular/router';
-import { PaginaPrincipalComponent } from "./pagina-principal/pagina-principal.component";
-import { PaginasComponent } from "./paginas/paginas.component";
-import { PaginaEventosComponent } from "./pagina-eventos/pagina-eventos.component";
-import { NotFoundComponent } from "./transversales/not-found/not-found.component";
+import { PaginaPrincipalComponent } from "./components/pagina-principal/pagina-principal.component";
+import { PaginasComponent } from "./components/paginas/paginas.component";
+import { PaginaEventosComponent } from "./components/pagina-eventos/pagina-eventos.component";
+import { NotFoundComponent } from "./components/transversales/not-found/not-found.component";
 
 export const routes: Routes = [
     { path: '', redirectTo: 'principal', pathMatch:'full' },
