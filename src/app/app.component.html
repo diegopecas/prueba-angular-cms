@@ -1,3 +1,4 @@
+<!--
 <form [formGroup]="applyForm" (submit)="submitApplication()">
   <label>Número de columnas</label>
   <select formControlName="columnas">
@@ -38,5 +39,8 @@
     (click)="seleccionarItem(item)"
     *ngFor="let item of bloques2"
   ></div>
-</div>
+</div>-->
+<app-encabezado></app-encabezado>
+<app-cabecera></app-cabecera>
 <router-outlet></router-outlet>
+<app-pie></app-pie>

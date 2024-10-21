@@ -3,15 +3,21 @@ import { CommonModule } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { PipesModule } from './common/pipes/pipes.module';
+import { RouterOutlet } from '@angular/router';
+import { EncabezadoComponent } from "./transversales/encabezado/encabezado.component";
+import { PieComponent } from './transversales/pie/pie.component';
+import { CabeceraComponent } from './transversales/cabecera/cabecera.component';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [CommonModule, RouterOutlet, EncabezadoComponent, PieComponent, CabeceraComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'homes';
-
+/*
   nuevo = {
     columnas: 1,
     color: '#ffffff',
@@ -153,5 +159,5 @@ export class AppComponent {
       Swal.fire(text);
       this.item.valor = text;
     }
-  }
+  }*/
 }
